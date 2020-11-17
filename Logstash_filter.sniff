@@ -1,0 +1,24 @@
+input {
+  beats {
+    port => "5044"
+  }
+}
+filter {
+	grok {
+	  match => ["message", "\[%{TIMESTAMP_ISO8601:timestamp}\]\[%{DATA:severity}\]\[%{DATA:source}\] \[%{DATA:nodename}\] \[%{DATA:index}\]\[%{NUMBER:shard}\] took\[%{DATA:took}\], took_millis\[%{NUMBER:took_millis}\], total_hits\[%{NUMBER:total_hits}\], types\[%{DATA:types}\], stats\[%{DATA:stats}\], search_type\[%{DATA:search_type}\], total_shards\[%{NUMBER:total_shards}\], source\[%{DATA:source_query}\]",
+		  "message", "\[%{TIMESTAMP_ISO8601:timestamp}\]\[%{DATA:severity}\]\[%{DATA:source}\] \[%{DATA:nodename}\] \[%{DATA:index}/%{DATA:hash}] took\[%{DATA:took}\], took_millis\[%{NUMBER:took_millis}\], type\[%{DATA:typ}], id\[%{DATA:id}], routing\[%{DATA:routing}],%{GREEDYDATA:message}"
+
+	  ]
+	}
+	mutate { remove_field => ["source"] }
+
+}
+output {
+  elasticsearch {
+    hosts => "localhost:9200"
+    index => "sniff_query-%{+YYYY.MM.dd}"
+    template => "/home/elk/elk/logstash-6.7.2/templates/filebeat_template.json"
+    template_name => "filebeat_template"
+    template_overwrite => true
+  }
+}

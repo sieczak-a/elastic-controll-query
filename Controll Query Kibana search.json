@@ -1,0 +1,1287 @@
+[
+  {
+    "_id": "Metricbeat-Docker",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"metricset.module:docker\"}}, \"index\": \"metricbeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Metricbeat Docker",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Apache-HTTPD",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"metricset.module: apache\"}}, \"index\": \"metricbeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Apache HTTPD",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Metricbeat-Redis",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"metricset.module:redis\"}}, \"index\": \"metricbeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Metricbeat Redis",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b6b7ccc0-c98d-11e7-9835-2f31fe08873b",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "beat.name",
+        "windows.service.display_name",
+        "windows.service.state",
+        "windows.service.start_type",
+        "windows.service.uptime.ms",
+        "windows.service.pid",
+        "windows.service.exit_code"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"metricset.module\": {\"query\": \"windows\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"metricbeat-*\", \"value\": \"windows\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"windows\", \"type\": \"phrase\"}, \"key\": \"metricset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"metricset.name\": {\"query\": \"service\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"metricbeat-*\", \"value\": \"service\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"service\", \"type\": \"phrase\"}, \"key\": \"metricset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"metricbeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Services [Metricbeat Windows]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Metricbeat-Rabbitmq",
+    "_type": "search",
+    "_source": {
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"metricset.module:rabbitmq\"}}, \"index\": \"metricbeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Metricbeat-Rabbitmq",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Metricbeat uWSGI status",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"metricbeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"metricset.module: uwsgi\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Metricbeat uWSGI status",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "MongoDB-search",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"metricset.module:mongodb\"}}, \"index\": \"metricbeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "MongoDB search",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8c308980-d1ad-11ea-838f-5d50a2fc3267",
+    "_type": "search",
+    "_source": {
+      "title": "Long Query",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "nodename",
+        "index",
+        "total_shards",
+        "total_hits",
+        "took"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"41614c10-d1b6-11ea-838f-5d50a2fc3267\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"took_millis > 1000\",\"language\":\"kuery\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"41614c10-d1b6-11ea-838f-5d50a2fc3267\",\"key\":\"log.file.path\",\"negate\":true,\"params\":{\"query\":\"/home/elk/elk/elasticsearch_1/logs/p4elk-prod_index_indexing_slowlog.log\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"/home/elk/elk/elasticsearch_1/logs/p4elk-prod_index_indexing_slowlog.log\"},\"query\":{\"match\":{\"log.file.path\":{\"query\":\"/home/elk/elk/elasticsearch_1/logs/p4elk-prod_index_indexing_slowlog.log\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"41614c10-d1b6-11ea-838f-5d50a2fc3267\",\"key\":\"log.file.path\",\"negate\":true,\"params\":{\"query\":\"/home/elk/elk/elasticsearch_2/logs/p4elk-prod_index_indexing_slowlog.log\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"/home/elk/elk/elasticsearch_2/logs/p4elk-prod_index_indexing_slowlog.log\"},\"query\":{\"match\":{\"log.file.path\":{\"query\":\"/home/elk/elk/elasticsearch_2/logs/p4elk-prod_index_indexing_slowlog.log\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"41614c10-d1b6-11ea-838f-5d50a2fc3267\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"exists\",\"key\":\"took_millis\",\"value\":\"exists\"},\"exists\":{\"field\":\"took_millis\"},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "00966640-d1af-11ea-838f-5d50a2fc3267",
+    "_type": "search",
+    "_source": {
+      "title": "Indexing slowlog",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "index",
+        "nodename",
+        "took"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"41614c10-d1b6-11ea-838f-5d50a2fc3267\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"took_millis > 100\",\"language\":\"kuery\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"b3e5cf60-d19b-11ea-838f-5d50a2fc3267\",\"key\":\"log.file.path\",\"negate\":true,\"params\":{\"query\":\"/home/elk/elk/elasticsearch_1/logs/p4elk-prod_index_search_slowlog.log\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"/home/elk/elk/elasticsearch_1/logs/p4elk-prod_index_search_slowlog.log\"},\"query\":{\"match\":{\"log.file.path\":{\"query\":\"/home/elk/elk/elasticsearch_1/logs/p4elk-prod_index_search_slowlog.log\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"b3e5cf60-d19b-11ea-838f-5d50a2fc3267\",\"key\":\"log.file.path\",\"negate\":true,\"params\":{\"query\":\"/home/elk/elk/elasticsearch_2/logs/p4elk-prod_index_search_slowlog.log\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"/home/elk/elk/elasticsearch_2/logs/p4elk-prod_index_search_slowlog.log\"},\"query\":{\"match\":{\"log.file.path\":{\"query\":\"/home/elk/elk/elasticsearch_2/logs/p4elk-prod_index_search_slowlog.log\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"41614c10-d1b6-11ea-838f-5d50a2fc3267\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"exists\",\"key\":\"took_millis\",\"value\":\"exists\"},\"exists\":{\"field\":\"took_millis\"},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b3f1b010-1f26-11e9-8ec4-cf5d91a864b3",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"iptables.length :*\", \"language\": \"kuery\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Events Search [Filebeat Iptables]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c4e80aa0-1fd4-11e9-ae2a-939083c6a64e",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"iptables.ubiquiti.rule_set :*\", \"language\": \"kuery\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Ubiquiti Firewall Events [Filebeat Iptables]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9f7d97c0-1fe9-11e9-ae2a-939083c6a64e",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"iptables.ubiquiti.rule_set :* and event.outcome : \\\"deny\\\"\", \"language\": \"kuery\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Ubiquiti Firewall Blocked Events [Filebeat Iptables]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "7862cab0-1fdb-11e9-ae2a-939083c6a64e",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"iptables.ubiquiti.rule_set :* and event.outcome : \\\"allow\\\"\", \"language\": \"kuery\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Ubiquiti Firewall Allowed Events [Filebeat Iptables]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "1c2bcec0-86d1-11e8-b59d-21efb914e65c",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "host.name",
+        "suricata.eve.flow_id",
+        "suricata.eve.src_ip",
+        "suricata.eve.src_port",
+        "suricata.eve.dest_ip",
+        "suricata.eve.dest_port",
+        "source_ecs.geo.country_iso_code",
+        "destination.geo.country_iso_code"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"event.type\": {\"query\": \"alert\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"alert\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"alert\", \"type\": \"phrase\"}, \"key\": \"event.type\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.module\": {\"query\": \"suricata\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"suricata\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"suricata\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"\", \"language\": \"kuery\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Alerts [Suricata]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "13dd22f0-86cc-11e8-b59d-21efb914e65c",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "host.name",
+        "event.type",
+        "suricata.eve.flow_id",
+        "suricata.eve.proto",
+        "source_ecs.ip",
+        "suricata.eve.src_port",
+        "suricata.eve.dest_ip",
+        "suricata.eve.dest_port",
+        "destination.geo.region_name",
+        "destination.geo.country_iso_code"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"event.type\": {\"query\": \"stats\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"stats\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"stats\", \"type\": \"phrase\"}, \"key\": \"event.type\", \"negate\": true, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.module\": {\"query\": \"suricata\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"suricata\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"suricata\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"\", \"language\": \"kuery\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Events [Suricata]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d57a2db0-86ca-11e8-b59d-21efb914e65c",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "host.name",
+        "suricata.eve.stats.detect.alert",
+        "suricata.eve.stats.app_layer.flow.dns_udp",
+        "suricata.eve.stats.app_layer.flow.tls",
+        "suricata.eve.stats.app_layer.flow.http",
+        "suricata.eve.stats.app_layer.flow.ssh",
+        "suricata.eve.stats.tcp.sessions"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"fileset.module\": {\"query\": \"suricata\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"suricata\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"suricata\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"event.type\": {\"query\": \"stats\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"stats\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"stats\", \"type\": \"phrase\"}, \"key\": \"event.type\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"\", \"language\": \"kuery\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Host Stats [Suricata]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Apache2-errors-log",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "apache2.error.client",
+        "apache2.error.level",
+        "apache2.error.module",
+        "apache2.error.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:apache2.error\"}}, \"index\": \"filebeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Apache errors log [Filebeat Apache2]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Apache2-access-logs",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "apache2.access.remote_ip",
+        "apache2.access.method",
+        "apache2.access.url",
+        "apache2.access.response_code"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:apache2.access\"}}, \"index\": \"filebeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Apache access logs [Filebeat Apache2]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "4ac0a370-0a11-11e7-8b04-eb22a5669f27",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "auditd.log.record_type",
+        "auditd.log.sequence",
+        "auditd.log.acct"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:auditd.log\"}}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Audit Events [Filebeat Auditd]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Kafka stacktraces",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "kafka.log.class",
+        "kafka.log.trace.class",
+        "kafka.log.trace.full"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"_exists_:kafka.log.trace.class\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Stacktraces [Filebeat Kafka]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "All Kafka logs",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "kafka.log.level",
+        "kafka.log.component",
+        "kafka.log.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"fileset.module\": {\"query\": \"kafka\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"kafka\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"kafka\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.name\": {\"query\": \"log\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"log\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"log\", \"type\": \"phrase\"}, \"key\": \"fileset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"*\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "All logs [Filebeat Kafka]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "PostgreSQL All Logs",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "postgresql.log.user",
+        "postgresql.log.database",
+        "postgresql.log.level",
+        "postgresql.log.message",
+        "postgresql.log.query"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"fileset.module\": {\"query\": \"postgresql\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"postgresql\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"postgresql\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"*\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "All Logs [Filebeat PostgreSQL]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Slow PostgreSQL Queries",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "postgresql.log.user",
+        "postgresql.log.database",
+        "postgresql.log.duration",
+        "postgresql.log.query"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"postgresql.log.duration:>30\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Slow Queries [Filebeat PostgreSQL]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "PostgreSQL Query Durations",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "postgresql.log.user",
+        "postgresql.log.database",
+        "postgresql.log.duration",
+        "postgresql.log.query"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"postgresql.log.duration:*\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Query Durations [Filebeat PostgreSQL]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e49fe000-0a7e-11e8-bffe-ff7d4f68cf94",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "mongodb.log.timestamp",
+        "mongodb.log.severity",
+        "mongodb.log.component",
+        "mongodb.log.context",
+        "mongodb.log.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"mongodb.log.severity: F or mongodb.log.severity: W\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Error logs [Filebeat MongoDB]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "bfc96a60-0a80-11e8-bffe-ff7d4f68cf94",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "mongodb.log.timestamp",
+        "mongodb.log.severity",
+        "mongodb.log.component",
+        "mongodb.log.context",
+        "mongodb.log.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"mongodb.log.severity: *\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "mongodb.log.timestamp",
+        "asc"
+      ],
+      "title": "All logs [Filebeat MongoDB]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Filebeat-MySQL-error-log",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "mysql.error.level",
+        "mysql.error.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\": \"filebeat-*\", \"filter\": [{\"query\": {\"match\": {\"fileset.module\": {\"query\": \"mysql\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"mysql\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"mysql\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.name\": {\"query\": \"error\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"error\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"error\", \"type\": \"phrase\"}, \"key\": \"fileset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"version\": true, \"query\": {\"query\": \"*\", \"language\": \"lucene\"}, \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"highlightAll\": true}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Error logs [Filebeat MySQL]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Filebeat-MySQL-Slow-log",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\": \"filebeat-*\", \"filter\": [{\"query\": {\"match\": {\"fileset.module\": {\"query\": \"mysql\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"mysql\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"mysql\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.name\": {\"query\": \"slowlog\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"slowlog\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"slowlog\", \"type\": \"phrase\"}, \"key\": \"fileset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"version\": true, \"query\": {\"query\": \"*\", \"language\": \"lucene\"}, \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"highlightAll\": true}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Slow logs [Filebeat MySQL]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "742e45d0-cbdd-11e7-9852-73e0a9df1bb6",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "logstash.slowlog.level",
+        "logstash.slowlog.plugin_type",
+        "logstash.slowlog.plugin_name",
+        "logstash.slowlog.message",
+        "logstash.slowlog.plugin_params",
+        "logstash.slowlog.execution_time_ns"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"fileset.module\": {\"query\": \"logstash\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"logstash\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"logstash\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.name\": {\"query\": \"slowlog\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"slowlog\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"slowlog\", \"type\": \"phrase\"}, \"key\": \"fileset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "logstash.slowlog.level",
+        "asc"
+      ],
+      "title": "Slow logs [Filebeat Logstash]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "cfaba090-cbda-11e7-9852-73e0a9df1bb6",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "logstash.log.level",
+        "logstash.log.module",
+        "logstash.log.message",
+        "source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"fileset.module\": {\"query\": \"logstash\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"logstash\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"logstash\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.name\": {\"query\": \"log\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"log\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"log\", \"type\": \"phrase\"}, \"key\": \"fileset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "logs [Filebeat Logstash]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b6f321e0-fa25-11e6-bbd3-29c986c96e5a",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "system.auth.user",
+        "system.auth.sudo.user",
+        "system.auth.sudo.pwd",
+        "system.auth.sudo.command"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"highlightAll\": true, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:system.auth.sudo\"}}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Sudo commands [Filebeat System]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c876e6a0-2418-11e7-a83b-d5f4cebac9ff",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "icinga.debug.facility",
+        "icinga.debug.severity",
+        "icinga.debug.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"fileset.module\": {\"query\": \"icinga\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"icinga\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"icinga\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.name\": {\"query\": \"debug\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"debug\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"debug\", \"type\": \"phrase\"}, \"key\": \"fileset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"*\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Debug Log [Filebeat Icinga]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ffaf5a30-2413-11e7-a0d9-39604d45ca7f",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "icinga.main.facility",
+        "icinga.main.severity",
+        "icinga.main.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"fileset.module\": {\"query\": \"icinga\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"icinga\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"icinga\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.name\": {\"query\": \"main\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"main\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"main\", \"type\": \"phrase\"}, \"key\": \"fileset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Main Log [Filebeat Icinga]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "710043e0-2417-11e7-a83b-d5f4cebac9ff",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "icinga.startup.facility",
+        "icinga.startup.severity",
+        "icinga.startup.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"icinga.startup.severity:critical\"}}, \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Startup Errors [Filebeat Icinga]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Filebeat-Nginx-module",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "nginx.access.url",
+        "nginx.access.method",
+        "nginx.access.response_code",
+        "nginx.access.referrer",
+        "nginx.access.body_sent.bytes"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\": \"filebeat-*\", \"filter\": [], \"version\": true, \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:nginx\"}}, \"language\": \"lucene\"}, \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"highlightAll\": true}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Nginx logs [Filebeat Nginx]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ML-Filebeat-Nginx-Access",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "Filebeat Nginx Access Data",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:nginx.access\"}}, \"index\": \"filebeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "ML Access Data [Filebeat Nginx]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Filebeat-Traefik-module",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:traefik\"}}, \"index\": \"filebeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Traefik logs [Filebeat Traefik]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "73613570-4791-11e7-be88-2ddb32f3df97",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "beat.name",
+        "redis.log.level",
+        "redis.log.role",
+        "redis.log.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"fileset.module\": {\"query\": \"redis\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"redis\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"redis\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.name\": {\"query\": \"log\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"log\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"log\", \"type\": \"phrase\"}, \"key\": \"fileset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"*\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Logs [Filebeat Redis]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "0ab87b80-478e-11e7-b1f0-cb29bac6bf8b",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "beat.name",
+        "message",
+        "redis.slowlog.duration.us",
+        "redis.slowlog.key"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:redis.slowlog\"}}, \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Slow logs [Filebeat Redis]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8030c1b0-fa77-11e6-ae9b-81e5311e8cab",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "system.auth.useradd.name",
+        "system.auth.useradd.uid",
+        "system.auth.useradd.gid",
+        "system.auth.useradd.home",
+        "system.auth.useradd.shell"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"highlightAll\": true, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:system.auth.useradd\"}}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "useradd logs [Filebeat System]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "eb0039f0-fa7f-11e6-a1df-a78bd7504d38",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "system.auth.groupadd.name",
+        "system.auth.groupadd.gid"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"highlightAll\": true, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:system.auth.groupadd\"}}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "groupadd logs [Filebeat System]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "62439dc0-f9c9-11e6-a747-6121780e0414",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "system.auth.ssh.event",
+        "system.auth.ssh.method",
+        "system.auth.user",
+        "system.auth.ssh.ip",
+        "system.auth.ssh.geoip.country_iso_code"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"index\": \"filebeat-*\", \"highlightAll\": true, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:system.auth.ssh.event\"}}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "SSH login attempts [Filebeat System]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Syslog-system-logs",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "system.syslog.hostname",
+        "system.syslog.program",
+        "system.syslog.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:system.syslog\"}}, \"highlightAll\": true, \"index\": \"filebeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Syslog logs [Filebeat System]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9eb25600-a1f0-11e7-928f-5dbe6f6f5519",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "nginx.error.level",
+        "nginx.error.message"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\": \"filebeat-*\", \"filter\": [], \"version\": true, \"query\": {\"query\": \"_exists_:nginx AND _exists_:nginx.error.message\", \"language\": \"lucene\"}, \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"highlightAll\": true}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Nginx error logs [Filebeat Nginx]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "6d9e66d0-a1f0-11e7-928f-5dbe6f6f5519",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "nginx.access.url",
+        "nginx.access.method",
+        "nginx.access.response_code",
+        "nginx.access.body_sent.bytes"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\": \"filebeat-*\", \"filter\": [], \"version\": true, \"query\": {\"query\": \"_exists_:nginx AND _exists_:nginx.access.url\", \"language\": \"lucene\"}, \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"highlightAll\": true}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Nginx access logs [Filebeat Nginx]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ML-Filebeat-Traefik-Access",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "_source"
+      ],
+      "description": "Filebeat Traefik Access Data",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"_exists_:traefik.access\"}}, \"index\": \"filebeat-*\"}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "ML Access Data [Filebeat Traefik]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "7a9482d0-eb00-11e7-8f04-51231daa5b05",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "osquery.result.columns.path",
+        "osquery.result.columns.type",
+        "osquery.result.columns.flags"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"osquery.result.name\": {\"query\": \"pack_it-compliance_mounts\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"pack_it-compliance_mounts\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"pack_it-compliance_mounts\", \"type\": \"phrase\"}, \"key\": \"osquery.result.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"*\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Mounts [Osquery results]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "3824b080-eb02-11e7-8f04-51231daa5b05",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "osquery.result.columns.name",
+        "osquery.result.columns.version",
+        "osquery.result.columns.revision"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"osquery.result.name\": {\"query\": \"pack_it-compliance_deb_packages\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"pack_it-compliance_deb_packages\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"pack_it-compliance_deb_packages\", \"type\": \"phrase\"}, \"key\": \"osquery.result.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"*\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "DEB packages installed [Osquery results]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b5d6baa0-eb02-11e7-8f04-51231daa5b05",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "osquery.result.name"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"osquery.result.name\": {\"query\": \"pack_it-compliance_os_version\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"pack_it-compliance_os_version\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"pack_it-compliance_os_version\", \"type\": \"phrase\"}, \"key\": \"osquery.result.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"*\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "OS versions [Osquery results]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f59e21e0-eb03-11e7-8f04-51231daa5b05",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "osquery.result.name",
+        "osquery.result.columns.name",
+        "osquery.result.columns.status"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"osquery.result.name\": {\"query\": \"pack_it-compliance_kernel_modules\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"pack_it-compliance_kernel_modules\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"pack_it-compliance_kernel_modules\", \"type\": \"phrase\"}, \"key\": \"osquery.result.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "Kernel modules [Osquery results]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "0fe5dc00-f49b-11e7-8647-534bb4c21040",
+    "_type": "search",
+    "_source": {
+      "columns": [
+        "osquery.result.name",
+        "osquery.result.columns.path",
+        "beat.hostname"
+      ],
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"prefix\": {\"osquery.result.name\": \"pack_ossec-rootkit\"}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"{\\\"prefix\\\":{\\\"osquery.result.name\\\":\\\"pack_ossec-rootkit\\\"}}\", \"disabled\": false, \"alias\": null, \"key\": \"query\", \"negate\": false, \"type\": \"custom\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.module\": {\"query\": \"osquery\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"osquery\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"osquery\", \"type\": \"phrase\"}, \"key\": \"fileset.module\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"fileset.name\": {\"query\": \"result\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"filebeat-*\", \"value\": \"result\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"result\", \"type\": \"phrase\"}, \"key\": \"fileset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"filebeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"\", \"language\": \"lucene\"}}"
+      },
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "title": "OSSEC Rootkits [Osquery Result]",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  }
+]

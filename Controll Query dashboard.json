@@ -1,0 +1,722 @@
+[
+  {
+    "_id": "Metricbeat-system-overview",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Overview of system metrics",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"System-Navigation\", \"size_x\": 12, \"size_y\": 1, \"panelIndex\": 9, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"c6f2ffd0-4d17-11e7-a196-69b9a7a020a9\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 11, \"col\": 1, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"fe064790-1b1f-11e7-bec4-a5e9ec5cab8b\", \"size_x\": 6, \"size_y\": 5, \"panelIndex\": 12, \"col\": 7, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"855899e0-1b1c-11e7-b09e-037021c4f8df\", \"size_x\": 6, \"size_y\": 5, \"panelIndex\": 13, \"col\": 1, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"7cdb1330-4d1a-11e7-a196-69b9a7a020a9\", \"size_x\": 12, \"size_y\": 6, \"panelIndex\": 14, \"col\": 1, \"row\": 9}, {\"type\": \"visualization\", \"id\": \"522ee670-1b92-11e7-bec4-a5e9ec5cab8b\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 16, \"col\": 9, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"1aae9140-1b93-11e7-8ada-3df93aab833e\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 17, \"col\": 11, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"825fdb80-4d1d-11e7-b5f2-2b7c1895bf32\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 18, \"col\": 7, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"d3166e80-1b91-11e7-bec4-a5e9ec5cab8b\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 19, \"col\": 5, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"83e12df0-1b91-11e7-bec4-a5e9ec5cab8b\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 20, \"col\": 3, \"row\": 2}]",
+      "timeRestore": false,
+      "title": "[Metricbeat System] Overview",
+      "uiStateJSON": "{\"P-16\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}, \"P-14\": {\"vis\": {\"defaultColors\": {\"45% - 60%\": \"rgb(35,139,69)\", \"30% - 45%\": \"rgb(116,196,118)\", \"15% - 30%\": \"rgb(199,233,192)\", \"0% - 15%\": \"rgb(247,252,245)\"}}}, \"P-12\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}, \"P-2\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}, \"P-3\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}, \"P-11\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "79ffd6e0-faa0-11e6-947f-177f697178b8",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Overviw of host metrics",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"beat.name:\\\"waw2-logst1\\\"\", \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"6b7b9a40-faa1-11e6-86b1-cd7735ff7e23\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 12}, {\"type\": \"visualization\", \"id\": \"4d546850-1b15-11e7-b09e-037021c4f8df\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"row\": 6}, {\"type\": \"visualization\", \"id\": \"089b85d0-1b16-11e7-b09e-037021c4f8df\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 7, \"row\": 12}, {\"type\": \"visualization\", \"id\": \"bfa5e400-1b16-11e7-b09e-037021c4f8df\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 4, \"col\": 1, \"row\": 9}, {\"type\": \"visualization\", \"id\": \"e0f001c0-1b18-11e7-b09e-037021c4f8df\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 5, \"col\": 7, \"row\": 15}, {\"type\": \"visualization\", \"id\": \"2e224660-1b19-11e7-b09e-037021c4f8df\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 6, \"col\": 1, \"row\": 15}, {\"type\": \"visualization\", \"id\": \"ab2d1e90-1b1a-11e7-b09e-037021c4f8df\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 7, \"col\": 1, \"row\": 6}, {\"type\": \"visualization\", \"id\": \"4e4bb1e0-1b1b-11e7-b09e-037021c4f8df\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 8, \"col\": 7, \"row\": 9}, {\"type\": \"visualization\", \"id\": \"26732e20-1b91-11e7-bec4-a5e9ec5cab8b\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 9, \"col\": 5, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"83e12df0-1b91-11e7-bec4-a5e9ec5cab8b\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 10, \"col\": 1, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"d3166e80-1b91-11e7-bec4-a5e9ec5cab8b\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 11, \"col\": 3, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"522ee670-1b92-11e7-bec4-a5e9ec5cab8b\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 12, \"col\": 7, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"1aae9140-1b93-11e7-8ada-3df93aab833e\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 13, \"col\": 9, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"34f97ee0-1b96-11e7-8ada-3df93aab833e\", \"size_x\": 4, \"size_y\": 2, \"panelIndex\": 14, \"col\": 9, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"System-Navigation\", \"size_x\": 6, \"size_y\": 1, \"panelIndex\": 16, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"19e123b0-4d5a-11e7-aee5-fdc812cc3bec\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 21, \"col\": 1, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"d2e80340-4d5c-11e7-aa29-87a97a796de6\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 22, \"col\": 3, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"825fdb80-4d1d-11e7-b5f2-2b7c1895bf32\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 23, \"col\": 7, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"96976150-4d5d-11e7-aa29-87a97a796de6\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 25, \"col\": 11, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"99381c80-4d60-11e7-9a4c-ed99bbcaa42b\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 27, \"col\": 1, \"row\": 18}, {\"type\": \"visualization\", \"id\": \"c5e3cf90-4d60-11e7-9a4c-ed99bbcaa42b\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 28, \"col\": 7, \"row\": 18}, {\"type\": \"visualization\", \"id\": \"590a60f0-5d87-11e7-8884-1bb4c3b890e4\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 29, \"col\": 5, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"3d65d450-a9c3-11e7-af20-67db8aecb295\", \"size_x\": 6, \"size_y\": 1, \"panelIndex\": 30, \"col\": 7, \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Metricbeat System] Host overview",
+      "uiStateJSON": "{\"P-29\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "query-analysis",
+    "_type": "dashboard",
+    "_source": {
+      "title": "query analysis",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"number-of-searches-per-index\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"id\":\"count-of-query-per-client\",\"type\":\"visualization\",\"panelIndex\":2,\"size_x\":6,\"size_y\":3,\"col\":7,\"row\":1},{\"id\":\"responsetime-graph\",\"type\":\"visualization\",\"panelIndex\":4,\"size_x\":6,\"size_y\":3,\"col\":1,\"row\":4},{\"id\":\"Max-Responsetime-per-Query\",\"type\":\"visualization\",\"panelIndex\":5,\"size_x\":6,\"size_y\":3,\"col\":7,\"row\":4}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "83874e20-d899-11ea-838f-5d50a2fc3267",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Controll query",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"1\",\"w\":24,\"x\":0,\"y\":0},\"id\":\"21051ef0-d892-11ea-838f-5d50a2fc3267\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.7.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"2\",\"w\":24,\"x\":24,\"y\":0},\"id\":\"daf68d00-d7cd-11ea-838f-5d50a2fc3267\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.7.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"3\",\"w\":24,\"x\":0,\"y\":15},\"id\":\"8c308980-d1ad-11ea-838f-5d50a2fc3267\",\"panelIndex\":\"3\",\"type\":\"search\",\"version\":\"6.7.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"4\",\"w\":24,\"x\":24,\"y\":15},\"id\":\"00966640-d1af-11ea-838f-5d50a2fc3267\",\"panelIndex\":\"4\",\"type\":\"search\",\"version\":\"6.7.2\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-1h",
+      "refreshInterval": {
+        "pause": true,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ceefb9e0-1f51-11e9-93ed-f7e068f4aebb",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Overview of the iptables events dashboard.",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"kuery\"}}"
+      },
+      "optionsJSON": "{\"useMargins\": true, \"darkTheme\": false, \"hidePanelTitles\": false}",
+      "panelsJSON": "[{\"gridData\": {\"i\": \"1\", \"h\": 15, \"y\": 0, \"w\": 37, \"x\": 0}, \"embeddableConfig\": {\"vis\": {\"legendOpen\": false}}, \"panelIndex\": \"1\", \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"4c913eb0-1f51-11e9-93ed-f7e068f4aebb\"}, {\"gridData\": {\"i\": \"2\", \"h\": 15, \"y\": 0, \"w\": 11, \"x\": 37}, \"embeddableConfig\": {}, \"panelIndex\": \"2\", \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"2599f5e0-1e98-11e9-8ec4-cf5d91a864b3\"}, {\"gridData\": {\"i\": \"3\", \"h\": 15, \"y\": 15, \"w\": 24, \"x\": 0}, \"embeddableConfig\": {\"mapCenter\": [47.15984001304432, -47.02148437500001], \"mapZoom\": 2}, \"panelIndex\": \"3\", \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"c4394ec0-1efd-11e9-8ec4-cf5d91a864b3\"}, {\"gridData\": {\"i\": \"4\", \"h\": 15, \"y\": 15, \"w\": 24, \"x\": 24}, \"embeddableConfig\": {\"mapCenter\": [49.15296965617042, -27.949218750000004], \"mapZoom\": 2}, \"panelIndex\": \"4\", \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"d8cea010-1efd-11e9-8ec4-cf5d91a864b3\"}, {\"gridData\": {\"i\": \"5\", \"h\": 15, \"y\": 30, \"w\": 19, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"5\", \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"b57b7370-1f1d-11e9-8ec4-cf5d91a864b3\"}, {\"gridData\": {\"i\": \"6\", \"h\": 15, \"y\": 30, \"w\": 18, \"x\": 19}, \"embeddableConfig\": {}, \"panelIndex\": \"6\", \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"35fe0910-1f26-11e9-8ec4-cf5d91a864b3\"}, {\"gridData\": {\"i\": \"7\", \"h\": 15, \"y\": 30, \"w\": 11, \"x\": 37}, \"embeddableConfig\": {}, \"panelIndex\": \"7\", \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"683402b0-1f29-11e9-8ec4-cf5d91a864b3\"}, {\"gridData\": {\"i\": \"8\", \"h\": 19, \"y\": 45, \"w\": 48, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"8\", \"version\": \"6.6.0\", \"type\": \"search\", \"id\": \"b3f1b010-1f26-11e9-8ec4-cf5d91a864b3\"}]",
+      "timeRestore": false,
+      "title": "[Filebeat Iptables] Overview",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d39f0980-1ff3-11e9-ae2a-939083c6a64e",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Overview of the Ubiquiti Firewall iptables events dashboard.",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"kuery\"}}"
+      },
+      "optionsJSON": "{\"useMargins\": true, \"darkTheme\": false, \"hidePanelTitles\": false}",
+      "panelsJSON": "[{\"gridData\": {\"i\": \"1\", \"h\": 15, \"y\": 0, \"w\": 33, \"x\": 0}, \"title\": \"Event Timeline\", \"panelIndex\": \"1\", \"embeddableConfig\": {\"vis\": {\"colors\": {\"deny\": \"#E24D42\", \"allow\": \"#64B0C8\"}, \"legendOpen\": true}}, \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"758b3620-1fda-11e9-ae2a-939083c6a64e\"}, {\"gridData\": {\"i\": \"2\", \"h\": 15, \"y\": 0, \"w\": 15, \"x\": 33}, \"title\": \"Top Blocked by source IP\", \"panelIndex\": \"2\", \"embeddableConfig\": {}, \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"1ba82fd0-1ff0-11e9-ae2a-939083c6a64e\"}, {\"gridData\": {\"i\": \"3\", \"h\": 15, \"y\": 15, \"w\": 24, \"x\": 0}, \"title\": \"Allowed Traffic Map\", \"panelIndex\": \"3\", \"embeddableConfig\": {\"mapCenter\": [39.095962936305476, -22.148437500000004], \"mapZoom\": 2}, \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"5bd53050-1fe9-11e9-ae2a-939083c6a64e\"}, {\"gridData\": {\"i\": \"4\", \"h\": 15, \"y\": 15, \"w\": 24, \"x\": 24}, \"title\": \"Blocked Traffic Map\", \"panelIndex\": \"4\", \"embeddableConfig\": {\"mapCenter\": [46.31658418182218, -34.10156250000001], \"mapZoom\": 2}, \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"8853aa20-1fef-11e9-ae2a-939083c6a64e\"}, {\"gridData\": {\"i\": \"5\", \"h\": 18, \"y\": 30, \"w\": 24, \"x\": 0}, \"title\": \"Traffic Breakdown by Protocol\", \"panelIndex\": \"5\", \"embeddableConfig\": {\"vis\": {\"colors\": {\"deny\": \"#E24D42\", \"udp\": \"#F2C96D\", \"tcp\": \"#447EBC\", \"ipv6-icmp\": \"#EA6460\", \"ipv4\": \"#65C5DB\", \"allow\": \"#7EB26D\", \"ipv6\": \"#D683CE\", \"icmp\": \"#F29191\"}}}, \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"fdea1ad0-1ff4-11e9-ae2a-939083c6a64e\"}, {\"gridData\": {\"i\": \"6\", \"h\": 27, \"y\": 48, \"w\": 48, \"x\": 0}, \"title\": \"Event View\", \"panelIndex\": \"6\", \"embeddableConfig\": {}, \"version\": \"6.6.0\", \"type\": \"search\", \"id\": \"c4e80aa0-1fd4-11e9-ae2a-939083c6a64e\"}, {\"gridData\": {\"i\": \"7\", \"h\": 18, \"y\": 30, \"w\": 24, \"x\": 24}, \"title\": \"Traffic Breakdown by Port\", \"panelIndex\": \"7\", \"embeddableConfig\": {}, \"version\": \"6.6.0\", \"type\": \"visualization\", \"id\": \"190bcb50-1ff6-11e9-ae2a-939083c6a64e\"}]",
+      "timeRestore": false,
+      "title": "[Filebeat Iptables] Ubiquiti Firewall Overview",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "05268ee0-86d1-11e8-b59d-21efb914e65c",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Overview of the Suricata Alerts dashboard.",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"kuery\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"useMargins\": true, \"darkTheme\": false, \"hidePanelTitles\": false}",
+      "panelsJSON": "[{\"gridData\": {\"i\": \"1\", \"h\": 10, \"y\": 0, \"w\": 23, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"1\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"494fa290-86d2-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"2\", \"h\": 22, \"y\": 0, \"w\": 25, \"x\": 23}, \"embeddableConfig\": {}, \"panelIndex\": \"2\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"16033310-86d3-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"3\", \"h\": 16, \"y\": 37, \"w\": 48, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"3\", \"version\": \"6.3.0\", \"type\": \"search\", \"id\": \"1c2bcec0-86d1-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"4\", \"h\": 15, \"y\": 22, \"w\": 23, \"x\": 0}, \"embeddableConfig\": {\"mapCenter\": [38.548165423046584, -6.328125000000001], \"mapZoom\": 2}, \"panelIndex\": \"4\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"85fed080-86d7-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"5\", \"h\": 15, \"y\": 22, \"w\": 25, \"x\": 23}, \"embeddableConfig\": {\"mapCenter\": [41.77131167976407, 1.9335937500000002], \"mapZoom\": 2}, \"panelIndex\": \"5\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"a09ca070-86d7-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"7\", \"h\": 12, \"y\": 10, \"w\": 12, \"x\": 11}, \"embeddableConfig\": {}, \"panelIndex\": \"7\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"2ccdc1a0-86d8-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"8\", \"h\": 12, \"y\": 10, \"w\": 11, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"8\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"c7b8b8f0-86d8-11e8-b59d-21efb914e65c\"}]",
+      "timeRestore": false,
+      "title": "[Suricata] Alert Overview",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "78289c40-86da-11e8-b59d-21efb914e65c",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Overview of the Surcata events dashboard.",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"kuery\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"useMargins\": true, \"darkTheme\": false, \"hidePanelTitles\": false}",
+      "panelsJSON": "[{\"gridData\": {\"i\": \"1\", \"h\": 10, \"y\": 0, \"w\": 48, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"1\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"c7d46c60-86da-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"2\", \"h\": 14, \"y\": 20, \"w\": 9, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"2\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"0a0aa630-86db-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"3\", \"h\": 14, \"y\": 20, \"w\": 11, \"x\": 19}, \"embeddableConfig\": {}, \"panelIndex\": \"3\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"728f64c0-86db-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"4\", \"h\": 10, \"y\": 10, \"w\": 48, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"4\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"9d5b5b50-86db-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"5\", \"h\": 19, \"y\": 34, \"w\": 48, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"5\", \"version\": \"6.3.0\", \"type\": \"search\", \"id\": \"13dd22f0-86cc-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"6\", \"h\": 14, \"y\": 20, \"w\": 9, \"x\": 30}, \"embeddableConfig\": {}, \"panelIndex\": \"6\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"5f99eb50-86dc-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"7\", \"h\": 14, \"y\": 20, \"w\": 9, \"x\": 39}, \"embeddableConfig\": {}, \"panelIndex\": \"7\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"8e7f88d0-86dc-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"8\", \"h\": 14, \"y\": 20, \"w\": 10, \"x\": 9}, \"embeddableConfig\": {}, \"panelIndex\": \"8\", \"version\": \"6.3.0\", \"type\": \"visualization\", \"id\": \"0a363820-86dd-11e8-b59d-21efb914e65c\"}, {\"gridData\": {\"i\": \"9\", \"h\": 16, \"y\": 53, \"w\": 48, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"9\", \"version\": \"6.3.0\", \"type\": \"search\", \"id\": \"d57a2db0-86ca-11e8-b59d-21efb914e65c\"}]",
+      "timeRestore": false,
+      "title": "[Suricata] Events Overview",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Filebeat-Apache2-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Filebeat Apache2 module dashboard",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"Apache2-access-unique-IPs-map\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"Apache2-response-codes-of-top-URLs\", \"size_x\": 8, \"size_y\": 3, \"panelIndex\": 2, \"col\": 1, \"row\": 6}, {\"type\": \"visualization\", \"id\": \"Apache2-browsers\", \"size_x\": 4, \"size_y\": 3, \"panelIndex\": 3, \"col\": 9, \"row\": 6}, {\"type\": \"visualization\", \"id\": \"Apache2-operating-systems\", \"size_x\": 2, \"size_y\": 2, \"panelIndex\": 4, \"col\": 11, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"Apache2-error-logs-over-time\", \"size_x\": 12, \"size_y\": 2, \"panelIndex\": 5, \"col\": 1, \"row\": 9}, {\"type\": \"visualization\", \"id\": \"Apache2-response-codes-over-time\", \"size_x\": 10, \"size_y\": 2, \"panelIndex\": 6, \"col\": 1, \"row\": 4}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"Apache2-errors-log\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 7, \"col\": 1, \"columns\": [\"apache2.error.client\", \"apache2.error.level\", \"apache2.error.module\", \"apache2.error.message\"], \"row\": 11}]",
+      "timeRestore": false,
+      "title": "[Filebeat Apache2] Access and error logs",
+      "uiStateJSON": "{\"P-1\": {\"mapCenter\": [40.713955826286046, -0.17578125], \"mapCollar\": {\"zoom\": 2, \"bottom_right\": {\"lat\": -39.667755, \"lon\": 180}, \"top_left\": {\"lat\": 90, \"lon\": -180}}, \"mapBounds\": {\"bottom_right\": {\"lat\": -3.864254615721396, \"lon\": 205.3125}, \"top_left\": {\"lat\": 67.7427590666639, \"lon\": -205.6640625}}, \"mapZoom\": 2}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "dfbb49f0-0a0f-11e7-8a62-2d05eaaac5cb",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Dashboard for the Auditd Filebeat module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"6295bdd0-0a0e-11e7-825f-6748cda7d858\", \"size_x\": 4, \"size_y\": 4, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"5ebdbe50-0a0f-11e7-825f-6748cda7d858\", \"size_x\": 4, \"size_y\": 4, \"panelIndex\": 2, \"col\": 9, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"2bb0fa70-0a11-11e7-9e84-43da493ad0c7\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 1, \"row\": 5}, {\"type\": \"visualization\", \"id\": \"d1726930-0a7f-11e7-8b04-eb22a5669f27\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 5, \"col\": 7, \"row\": 5}, {\"type\": \"visualization\", \"id\": \"c5411910-0a87-11e7-8b04-eb22a5669f27\", \"size_x\": 4, \"size_y\": 4, \"panelIndex\": 6, \"col\": 5, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"4ac0a370-0a11-11e7-8b04-eb22a5669f27\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 7, \"col\": 1, \"columns\": [\"auditd.log.record_type\", \"auditd.log.sequence\", \"auditd.log.acct\"], \"row\": 8}]",
+      "timeRestore": false,
+      "title": "[Filebeat Auditd] Audit Events",
+      "uiStateJSON": "{\"P-5\": {\"mapCollar\": {\"zoom\": 2, \"bottom_right\": {\"lat\": -87.16078, \"lon\": 180}, \"top_left\": {\"lat\": 87.16078, \"lon\": -180}}, \"mapZoom\": 2, \"mapBounds\": {\"bottom_right\": {\"lat\": -43.580390855607845, \"lon\": 102.65625}, \"top_left\": {\"lat\": 43.58039085560784, \"lon\": -102.3046875}}}, \"P-2\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "943caca0-87ee-11e7-ad9c-db80de0bf8d3",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Filebeat Kafka module dashboard",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"Number of Kafka stracktraces by class\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"Kafka stacktraces\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"columns\": [\"kafka.log.class\", \"kafka.log.trace.class\", \"kafka.log.trace.full\"], \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"All Kafka logs\", \"size_x\": 12, \"size_y\": 5, \"panelIndex\": 3, \"col\": 1, \"columns\": [\"kafka.log.level\", \"kafka.log.component\", \"kafka.log.message\"], \"row\": 6}, {\"type\": \"visualization\", \"id\": \"3f7c33c0-87ee-11e7-ad9c-db80de0bf8d3\", \"size_x\": 12, \"size_y\": 2, \"panelIndex\": 4, \"col\": 1, \"row\": 4}]",
+      "timeRestore": false,
+      "title": "[Filebeat Kafka] Overview",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "158be870-87f4-11e7-ad9c-db80de0bf8d3",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Overview dashboard for the Filebeat PostgreSQL module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"PostgreSQL Log Level Count\", \"size_x\": 3, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"PostgreSQL All Logs\", \"size_x\": 12, \"size_y\": 6, \"panelIndex\": 2, \"col\": 1, \"columns\": [\"postgresql.log.user\", \"postgresql.log.database\", \"postgresql.log.level\", \"postgresql.log.message\", \"postgresql.log.query\"], \"row\": 4}, {\"type\": \"visualization\", \"id\": \"3dbd5370-87f3-11e7-ad9c-db80de0bf8d3\", \"size_x\": 9, \"size_y\": 3, \"panelIndex\": 3, \"col\": 4, \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Filebeat PostgreSQL] Overview",
+      "uiStateJSON": "{\"P-1\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e4c5f230-87f3-11e7-ad9c-db80de0bf8d3",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Dashboard for analyzing the query durations of the Filebeat PostgreSQL module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"postgresql.log.query:*\", \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"PostgreSQL Query Count and Duration\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"Slow PostgreSQL Queries\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"columns\": [\"postgresql.log.user\", \"postgresql.log.database\", \"postgresql.log.duration\", \"postgresql.log.query\"], \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"PostgreSQL Query Durations\", \"size_x\": 12, \"size_y\": 5, \"panelIndex\": 3, \"col\": 1, \"columns\": [\"postgresql.log.user\", \"postgresql.log.database\", \"postgresql.log.duration\", \"postgresql.log.query\"], \"row\": 4}]",
+      "timeRestore": false,
+      "title": "[Filebeat PostgreSQL] Query Duration Overview",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "abcf35b0-0a82-11e8-bffe-ff7d4f68cf94",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Filebeat MongoDB module overview",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"0fef5710-0a82-11e8-bffe-ff7d4f68cf94\", \"size_x\": 4, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"e49fe000-0a7e-11e8-bffe-ff7d4f68cf94\", \"size_x\": 8, \"size_y\": 3, \"panelIndex\": 2, \"col\": 5, \"columns\": [\"mongodb.log.timestamp\", \"mongodb.log.severity\", \"mongodb.log.component\", \"mongodb.log.context\", \"mongodb.log.message\"], \"row\": 1}, {\"sort\": [\"mongodb.log.timestamp\", \"asc\"], \"type\": \"search\", \"id\": \"bfc96a60-0a80-11e8-bffe-ff7d4f68cf94\", \"size_x\": 12, \"size_y\": 6, \"panelIndex\": 3, \"col\": 1, \"columns\": [\"mongodb.log.timestamp\", \"mongodb.log.severity\", \"mongodb.log.component\", \"mongodb.log.context\", \"mongodb.log.message\"], \"row\": 4}]",
+      "timeRestore": false,
+      "title": "Overview [Filebeat MongoDB]",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Filebeat-MySQL-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Overview dashboard for the Filebeat MySQL module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"MySQL-slowest-queries\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 1, \"col\": 1, \"row\": 8}, {\"type\": \"visualization\", \"id\": \"MySQL-Slow-queries-over-time\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"MySQL-error-logs\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 7, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"Filebeat-MySQL-error-log\", \"size_x\": 6, \"size_y\": 5, \"panelIndex\": 4, \"col\": 7, \"columns\": [\"mysql.error.level\", \"mysql.error.message\"], \"row\": 8}, {\"type\": \"visualization\", \"id\": \"MySQL-Error-logs-levels\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 5, \"col\": 7, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"MySQL-Slow-logs-by-count\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 6, \"col\": 1, \"row\": 4}]",
+      "timeRestore": false,
+      "title": "[Filebeat MySQL] Overview",
+      "uiStateJSON": "{\"P-1\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Filebeat-Logstash-Slowlog-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"742e45d0-cbdd-11e7-9852-73e0a9df1bb6\", \"size_x\": 12, \"size_y\": 9, \"panelIndex\": 1, \"col\": 1, \"columns\": [\"logstash.slowlog.level\", \"logstash.slowlog.plugin_type\", \"logstash.slowlog.plugin_name\", \"logstash.slowlog.message\", \"logstash.slowlog.plugin_params\", \"logstash.slowlog.execution_time_ns\"], \"row\": 7}, {\"type\": \"visualization\", \"id\": \"0b1dace0-cbdb-11e7-9852-73e0a9df1bb6\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"e90b7240-cbda-11e7-9852-73e0a9df1bb6\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"b3315630-cbdf-11e7-9852-73e0a9df1bb6\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 4, \"col\": 1, \"row\": 4}]",
+      "timeRestore": false,
+      "title": "Slowlogs [Filebeat Logstash]",
+      "uiStateJSON": "{\"P-4\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": 3, \"direction\": null}}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "277876d0-fa2c-11e6-bbd3-29c986c96e5a",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Sudo commands dashboard from the Filebeat System module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"5c7af030-fa2a-11e6-bbd3-29c986c96e5a\", \"size_x\": 12, \"size_y\": 4, \"panelIndex\": 1, \"col\": 1, \"row\": 6}, {\"type\": \"visualization\", \"id\": \"51164310-fa2b-11e6-bbd3-29c986c96e5a\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 2, \"col\": 1, \"row\": 10}, {\"type\": \"visualization\", \"id\": \"dc589770-fa2b-11e6-bbd3-29c986c96e5a\", \"size_x\": 12, \"size_y\": 4, \"panelIndex\": 3, \"col\": 1, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"327417e0-8462-11e7-bab8-bd2f0fb42c54\", \"size_x\": 12, \"size_y\": 1, \"panelIndex\": 4, \"col\": 1, \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Filebeat System] Sudo commands",
+      "uiStateJSON": "{\"P-3\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "26309570-2419-11e7-a83b-d5f4cebac9ff",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Filebeat Icinga module dashboard for the debug logs",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"0bc34b60-2419-11e7-a83b-d5f4cebac9ff\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"fb09d4b0-2418-11e7-a83b-d5f4cebac9ff\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"c876e6a0-2418-11e7-a83b-d5f4cebac9ff\", \"size_x\": 12, \"size_y\": 29, \"panelIndex\": 3, \"col\": 1, \"columns\": [\"icinga.debug.facility\", \"icinga.debug.severity\", \"icinga.debug.message\"], \"row\": 4}]",
+      "timeRestore": false,
+      "title": "[Filebeat Icinga] Debug Log",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f693d260-2417-11e7-a83b-d5f4cebac9ff",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Filebeat Icinga module dashboard for the main log files",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"d8e5dc40-2417-11e7-a83b-d5f4cebac9ff\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 1, \"col\": 7, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"ffaf5a30-2413-11e7-a0d9-39604d45ca7f\", \"size_x\": 12, \"size_y\": 25, \"panelIndex\": 2, \"col\": 1, \"columns\": [\"icinga.main.facility\", \"icinga.main.severity\", \"icinga.main.message\"], \"row\": 4}, {\"type\": \"visualization\", \"id\": \"2cf77780-2418-11e7-a83b-d5f4cebac9ff\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 1, \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Filebeat Icinga] Main Log",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "4278ad30-fe16-11e7-a3b0-d13028918f9f",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Dashboard for the Filebeat IIS module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"useMargins\": true, \"darkTheme\": false, \"hidePanelTitles\": false}",
+      "panelsJSON": "[{\"gridData\": {\"i\": \"1\", \"h\": 3, \"y\": 0, \"w\": 12, \"x\": 0}, \"type\": \"visualization\", \"version\": \"6.1.2\", \"panelIndex\": \"1\", \"id\": \"eb2db5b0-fe11-11e7-a3b0-d13028918f9f\"}, {\"gridData\": {\"i\": \"2\", \"h\": 3, \"y\": 3, \"w\": 7, \"x\": 0}, \"type\": \"visualization\", \"version\": \"6.1.2\", \"panelIndex\": \"2\", \"id\": \"f31414b0-fe14-11e7-a3b0-d13028918f9f\"}, {\"gridData\": {\"i\": \"4\", \"h\": 3, \"y\": 9, \"w\": 6, \"x\": 0}, \"type\": \"visualization\", \"version\": \"6.1.2\", \"panelIndex\": \"4\", \"id\": \"63129c80-fe12-11e7-a3b0-d13028918f9f\"}, {\"gridData\": {\"i\": \"5\", \"h\": 3, \"y\": 9, \"w\": 6, \"x\": 6}, \"type\": \"visualization\", \"version\": \"6.1.2\", \"panelIndex\": \"5\", \"id\": \"ccd3f9c0-fe12-11e7-a3b0-d13028918f9f\"}, {\"gridData\": {\"i\": \"6\", \"h\": 3, \"y\": 3, \"w\": 5, \"x\": 7}, \"type\": \"visualization\", \"version\": \"6.1.2\", \"panelIndex\": \"6\", \"id\": \"41f38230-fe17-11e7-a3b0-d13028918f9f\"}, {\"gridData\": {\"i\": \"7\", \"h\": 3, \"y\": 6, \"w\": 12, \"x\": 0}, \"type\": \"visualization\", \"version\": \"6.1.2\", \"panelIndex\": \"7\", \"id\": \"c0d02cd0-fe1b-11e7-a3b0-d13028918f9f\"}]",
+      "timeRestore": false,
+      "title": "[Filebeat IIS] Access and error logs",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "3560d580-aa34-11e8-9c06-877f0445e3e0",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Filebeat HAProxy module dashboard",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"lucene\"}}"
+      },
+      "optionsJSON": "{\"useMargins\": true, \"darkTheme\": false, \"hidePanelTitles\": false}",
+      "panelsJSON": "[{\"gridData\": {\"i\": \"1\", \"h\": 15, \"y\": 0, \"w\": 24, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"1\", \"version\": \"6.5.2\", \"type\": \"visualization\", \"id\": \"55251360-aa32-11e8-9c06-877f0445e3e0\"}, {\"gridData\": {\"i\": \"2\", \"h\": 15, \"y\": 0, \"w\": 24, \"x\": 24}, \"embeddableConfig\": {}, \"panelIndex\": \"2\", \"version\": \"6.5.2\", \"type\": \"visualization\", \"id\": \"7fb671f0-aa32-11e8-9c06-877f0445e3e0\"}, {\"gridData\": {\"i\": \"3\", \"h\": 15, \"y\": 15, \"w\": 24, \"x\": 0}, \"embeddableConfig\": {}, \"panelIndex\": \"3\", \"version\": \"6.5.2\", \"type\": \"visualization\", \"id\": \"11f8b9c0-aa32-11e8-9c06-877f0445e3e0\"}, {\"gridData\": {\"i\": \"4\", \"h\": 15, \"y\": 15, \"w\": 24, \"x\": 24}, \"embeddableConfig\": {}, \"panelIndex\": \"4\", \"version\": \"6.5.2\", \"type\": \"visualization\", \"id\": \"68af8ef0-aa33-11e8-9c06-877f0445e3e0\"}]",
+      "timeRestore": false,
+      "title": "[Filebeat HAProxy] Overview",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b9163ea0-2417-11e7-a83b-d5f4cebac9ff",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Filebeat Icinga module dashboard for startup errors",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"a59b5e00-2417-11e7-a83b-d5f4cebac9ff\", \"size_x\": 12, \"size_y\": 2, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"710043e0-2417-11e7-a83b-d5f4cebac9ff\", \"size_x\": 12, \"size_y\": 13, \"panelIndex\": 2, \"col\": 1, \"columns\": [\"icinga.startup.facility\", \"icinga.startup.severity\", \"icinga.startup.message\"], \"row\": 3}]",
+      "timeRestore": false,
+      "title": "[Filebeat Icinga] Startup Errors",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Filebeat-Logstash-Log-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "description": "",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"0b1dace0-cbdb-11e7-9852-73e0a9df1bb6\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"e90b7240-cbda-11e7-9852-73e0a9df1bb6\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 1, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"cfaba090-cbda-11e7-9852-73e0a9df1bb6\", \"size_x\": 12, \"size_y\": 10, \"panelIndex\": 4, \"col\": 1, \"columns\": [\"logstash.log.level\", \"logstash.log.module\", \"logstash.log.message\", \"source\"], \"row\": 4}]",
+      "timeRestore": false,
+      "title": "Logstash Logs [Filebeat Logstash]",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "55a9e6e0-a29e-11e7-928f-5dbe6f6f5519",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Dashboard for the Filebeat Nginx module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"Nginx-Access-Browsers\", \"size_x\": 3, \"size_y\": 3, \"panelIndex\": 3, \"col\": 10, \"row\": 12}, {\"type\": \"visualization\", \"id\": \"Nginx-Access-OSes\", \"size_x\": 3, \"size_y\": 3, \"panelIndex\": 4, \"col\": 7, \"row\": 12}, {\"type\": \"visualization\", \"id\": \"Nginx-Access-Map\", \"size_x\": 12, \"size_y\": 4, \"panelIndex\": 8, \"col\": 1, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"b70b1b20-a1f4-11e7-928f-5dbe6f6f5519\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 13, \"col\": 1, \"row\": 6}, {\"type\": \"visualization\", \"id\": \"9184fa00-a1f5-11e7-928f-5dbe6f6f5519\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 14, \"col\": 7, \"row\": 9}, {\"type\": \"visualization\", \"id\": \"46322e50-a1f6-11e7-928f-5dbe6f6f5519\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 15, \"col\": 1, \"row\": 9}, {\"type\": \"visualization\", \"id\": \"0dd6f320-a29f-11e7-928f-5dbe6f6f5519\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 16, \"col\": 1, \"row\": 12}, {\"type\": \"visualization\", \"id\": \"97109780-a2a5-11e7-928f-5dbe6f6f5519\", \"size_x\": 12, \"size_y\": 1, \"panelIndex\": 17, \"col\": 1, \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Filebeat Nginx] Overview",
+      "uiStateJSON": "{\"P-4\": {\"vis\": {\"legendOpen\": true}}, \"P-8\": {\"mapCenter\": [50.51342652633956, -0.17578125], \"mapCollar\": {\"zoom\": 2, \"bottom_right\": {\"lat\": -49.583095, \"lon\": 180}, \"top_left\": {\"lat\": 90, \"lon\": -180}}, \"mapBounds\": {\"bottom_right\": {\"lat\": -7.362466865535738, \"lon\": 245.39062500000003}, \"top_left\": {\"lat\": 77.07878389624943, \"lon\": -245.74218750000003}}, \"mapZoom\": 2}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ML-Nginx-Remote-IP-URL-Explorer",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Machine Learning dashboard for the Filebeat Nginx module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}}], \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"ML-Nginx-Access-Unique-Count-URL-Timechart\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"ML-Nginx-Access-Response-Code-Timechart\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"ML-Nginx-Access-Top-Remote-IPs-Table\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 1, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"ML-Nginx-Access-Map\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 4, \"col\": 7, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"ML-Nginx-Access-Top-URLs-Table\", \"size_x\": 12, \"size_y\": 8, \"panelIndex\": 5, \"col\": 1, \"row\": 7}]",
+      "timeRestore": false,
+      "title": "[Filebeat Nginx] [ML] Remote IP URL Explorer",
+      "uiStateJSON": "{\"P-5\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}, \"P-2\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}, \"P-3\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Filebeat-Traefik-Dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Dashboard for the Filebeat Traefik module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}}]}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"Traefik-Access-Browsers\", \"size_x\": 4, \"size_y\": 4, \"panelIndex\": 3, \"col\": 1, \"row\": 10}, {\"type\": \"visualization\", \"id\": \"Traefik-Access-OSes\", \"size_x\": 4, \"size_y\": 4, \"panelIndex\": 4, \"col\": 5, \"row\": 10}, {\"type\": \"visualization\", \"id\": \"New-Visualization\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 5, \"col\": 1, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"Traefik-Access-Response-codes-by-top-URLs\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 6, \"col\": 1, \"row\": 7}, {\"type\": \"visualization\", \"id\": \"Sent-sizes\", \"size_x\": 4, \"size_y\": 4, \"panelIndex\": 7, \"col\": 9, \"row\": 10}, {\"type\": \"visualization\", \"id\": \"Traefik-Access-Map\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 8, \"col\": 1, \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Filebeat Traefik] Access logs",
+      "uiStateJSON": "{\"P-4\": {\"vis\": {\"legendOpen\": true}}, \"P-8\": {\"mapCenter\": [50.51342652633956, -0.17578125]}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "7fea2930-478e-11e7-b1f0-cb29bac6bf8b",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Overview dashboard for the FIlebeat Redis module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"78b9afe0-478f-11e7-b1f0-cb29bac6bf8b\", \"size_x\": 3, \"size_y\": 3, \"panelIndex\": 2, \"col\": 1, \"row\": 5}, {\"type\": \"visualization\", \"id\": \"d2864600-478f-11e7-be88-2ddb32f3df97\", \"size_x\": 9, \"size_y\": 3, \"panelIndex\": 3, \"col\": 4, \"row\": 5}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"73613570-4791-11e7-be88-2ddb32f3df97\", \"size_x\": 12, \"size_y\": 4, \"panelIndex\": 4, \"col\": 1, \"columns\": [\"beat.name\", \"redis.log.level\", \"redis.log.role\", \"redis.log.message\"], \"row\": 8}, {\"type\": \"visualization\", \"id\": \"dcccaa80-4791-11e7-be88-2ddb32f3df97\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 5, \"col\": 7, \"row\": 1}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"0ab87b80-478e-11e7-b1f0-cb29bac6bf8b\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 6, \"col\": 1, \"columns\": [\"beat.name\", \"message\", \"redis.slowlog.duration.us\", \"redis.slowlog.key\"], \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Filebeat Redis] Overview",
+      "uiStateJSON": "{\"P-5\": {\"vis\": {\"legendOpen\": false}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "0d3f2380-fa78-11e6-ae9b-81e5311e8cab",
+    "_type": "dashboard",
+    "_source": {
+      "description": "New users and groups dashboard for the System module in Filebeat",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"f398d2f0-fa77-11e6-ae9b-81e5311e8cab\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"5dd15c00-fa78-11e6-ae9b-81e5311e8cab\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"e121b140-fa78-11e6-a1df-a78bd7504d38\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 1, \"row\": 5}, {\"type\": \"visualization\", \"id\": \"d56ee420-fa79-11e6-a1df-a78bd7504d38\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 4, \"col\": 7, \"row\": 5}, {\"type\": \"visualization\", \"id\": \"12667040-fa80-11e6-a1df-a78bd7504d38\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 5, \"col\": 1, \"row\": 8}, {\"type\": \"visualization\", \"id\": \"346bb290-fa80-11e6-a1df-a78bd7504d38\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 6, \"col\": 7, \"row\": 8}, {\"type\": \"visualization\", \"id\": \"327417e0-8462-11e7-bab8-bd2f0fb42c54\", \"size_x\": 12, \"size_y\": 1, \"panelIndex\": 7, \"col\": 1, \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Filebeat System] New users and groups",
+      "uiStateJSON": "{\"P-5\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}, \"P-1\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5517a150-f9ce-11e6-8115-a7c18106d86a",
+    "_type": "dashboard",
+    "_source": {
+      "description": "SSH dashboard for the System module in Filebeat",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"d16bb400-f9cc-11e6-8115-a7c18106d86a\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 5}, {\"type\": \"visualization\", \"id\": \"78b74f30-f9cd-11e6-8115-a7c18106d86a\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 2, \"col\": 1, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"341ffe70-f9ce-11e6-8115-a7c18106d86a\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 3, \"col\": 1, \"row\": 8}, {\"type\": \"visualization\", \"id\": \"3cec3eb0-f9d3-11e6-8a3e-2b904044ea1d\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 4, \"col\": 7, \"row\": 8}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"62439dc0-f9c9-11e6-a747-6121780e0414\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 5, \"col\": 1, \"columns\": [\"system.auth.ssh.event\", \"system.auth.ssh.method\", \"system.auth.user\", \"system.auth.ssh.ip\", \"system.auth.ssh.geoip.country_iso_code\"], \"row\": 12}, {\"type\": \"visualization\", \"id\": \"327417e0-8462-11e7-bab8-bd2f0fb42c54\", \"size_x\": 12, \"size_y\": 1, \"panelIndex\": 6, \"col\": 1, \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Filebeat System] SSH login attempts",
+      "uiStateJSON": "{\"P-4\": {\"mapCenter\": [39.774769485295465, 23.203125], \"mapCollar\": {\"zoom\": 3, \"bottom_right\": {\"lat\": -14.777884999999998, \"lon\": 125.771485}, \"top_left\": {\"lat\": 85.593335, \"lon\": -79.189455}}, \"mapBounds\": {\"bottom_right\": {\"lat\": 10.31491928581316, \"lon\": 74.53125}, \"top_left\": {\"lat\": 60.50052541051131, \"lon\": -27.94921875}}, \"mapZoom\": 3}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "Filebeat-syslog-dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Syslog dashboard from the Filebeat System module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"Syslog-events-by-hostname\", \"size_x\": 8, \"size_y\": 4, \"panelIndex\": 1, \"col\": 1, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"Syslog-hostnames-and-processes\", \"size_x\": 4, \"size_y\": 4, \"panelIndex\": 2, \"col\": 9, \"row\": 2}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"Syslog-system-logs\", \"size_x\": 12, \"size_y\": 7, \"panelIndex\": 3, \"col\": 1, \"columns\": [\"system.syslog.hostname\", \"system.syslog.program\", \"system.syslog.message\"], \"row\": 6}, {\"type\": \"visualization\", \"id\": \"327417e0-8462-11e7-bab8-bd2f0fb42c54\", \"size_x\": 12, \"size_y\": 1, \"panelIndex\": 4, \"col\": 1, \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Filebeat System] Syslog dashboard",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "046212a0-a2a1-11e7-928f-5dbe6f6f5519",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Dashboard for the Filebeat Nginx module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"9eb25600-a1f0-11e7-928f-5dbe6f6f5519\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 11, \"col\": 1, \"columns\": [\"nginx.error.level\", \"nginx.error.message\"], \"row\": 5}, {\"sort\": [\"@timestamp\", \"desc\"], \"type\": \"search\", \"id\": \"6d9e66d0-a1f0-11e7-928f-5dbe6f6f5519\", \"size_x\": 12, \"size_y\": 7, \"panelIndex\": 16, \"col\": 1, \"columns\": [\"nginx.access.url\", \"nginx.access.method\", \"nginx.access.response_code\", \"nginx.access.body_sent.bytes\"], \"row\": 8}, {\"type\": \"visualization\", \"id\": \"1cfb1a80-a1f4-11e7-928f-5dbe6f6f5519\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 18, \"col\": 1, \"row\": 2}, {\"type\": \"visualization\", \"id\": \"97109780-a2a5-11e7-928f-5dbe6f6f5519\", \"size_x\": 12, \"size_y\": 1, \"panelIndex\": 19, \"col\": 1, \"row\": 1}]",
+      "timeRestore": false,
+      "title": "[Filebeat Nginx] Access and error logs",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ML-Nginx-Access-Remote-IP-Count-Explorer",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Machine learning dashboard, for the Filebeat Nginx module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}}], \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"ML-Nginx-Access-Remote-IP-Timechart\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"ML-Nginx-Access-Response-Code-Timechart\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"ML-Nginx-Access-Top-Remote-IPs-Table\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 1, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"ML-Nginx-Access-Map\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 4, \"col\": 7, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"ML-Nginx-Access-Top-URLs-Table\", \"size_x\": 12, \"size_y\": 9, \"panelIndex\": 5, \"col\": 1, \"row\": 7}]",
+      "timeRestore": false,
+      "title": "[Filebeat Nginx] [ML]  Remote IP Count Explorer",
+      "uiStateJSON": "{\"P-5\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}, \"P-3\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ML-Traefik-Access-Remote-IP-Count-Explorer",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Machine learning dashboard, for the Filebeat Traefik module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}}], \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"ML-Traefik-Access-Remote-IP-Timechart\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"ML-Traefik-Access-Response-Code-Timechart\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"ML-Traefik-Access-Top-Remote-IPs-Table\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 1, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"ML-Traefik-Access-Map\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 4, \"col\": 7, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"ML-Traefik-Access-Top-URLs-Table\", \"size_x\": 12, \"size_y\": 9, \"panelIndex\": 5, \"col\": 1, \"row\": 7}]",
+      "timeRestore": false,
+      "title": "[Filebeat Traefik] [ML]  Remote IP Count Explorer",
+      "uiStateJSON": "{\"P-5\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}, \"P-3\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ML-Traefik-Remote-IP-URL-Explorer",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Machine Learning dashboard for the Filebeat Traefik module",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [{\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}}], \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"darkTheme\": false}",
+      "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"ML-Traefik-Access-Unique-Count-URL-Timechart\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"ML-Traefik-Access-Response-Code-Timechart\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 7, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"ML-Traefik-Access-Top-Remote-IPs-Table\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 1, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"ML-Traefik-Access-Map\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 4, \"col\": 7, \"row\": 4}, {\"type\": \"visualization\", \"id\": \"ML-Traefik-Access-Top-URLs-Table\", \"size_x\": 12, \"size_y\": 8, \"panelIndex\": 5, \"col\": 1, \"row\": 7}]",
+      "timeRestore": false,
+      "title": "[Filebeat Traefik] [ML] Remote IP URL Explorer",
+      "uiStateJSON": "{\"P-5\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}, \"P-2\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}, \"P-3\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "69f5ae20-eb02-11e7-8f04-51231daa5b05",
+    "_type": "dashboard",
+    "_source": {
+      "description": "Dashboard for visualizing the data collected by the Osquery compliance pack.",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"useMargins\": true, \"darkTheme\": false, \"hidePanelTitles\": false}",
+      "panelsJSON": "[{\"gridData\": {\"i\": \"1\", \"h\": 4, \"y\": 6, \"w\": 6, \"x\": 6}, \"type\": \"search\", \"version\": \"6.2.4\", \"panelIndex\": \"1\", \"id\": \"7a9482d0-eb00-11e7-8f04-51231daa5b05\"}, {\"gridData\": {\"i\": \"2\", \"h\": 5, \"y\": 1, \"w\": 7, \"x\": 5}, \"type\": \"visualization\", \"version\": \"6.2.4\", \"panelIndex\": \"2\", \"id\": \"a9fd8bb0-eb01-11e7-8f04-51231daa5b05\"}, {\"gridData\": {\"i\": \"3\", \"h\": 4, \"y\": 6, \"w\": 6, \"x\": 0}, \"type\": \"search\", \"version\": \"6.2.4\", \"panelIndex\": \"3\", \"id\": \"3824b080-eb02-11e7-8f04-51231daa5b05\"}, {\"gridData\": {\"i\": \"4\", \"h\": 3, \"y\": 1, \"w\": 5, \"x\": 0}, \"type\": \"visualization\", \"version\": \"6.2.4\", \"panelIndex\": \"4\", \"id\": \"1da1ed30-eb03-11e7-8f04-51231daa5b05\"}, {\"gridData\": {\"i\": \"5\", \"h\": 2, \"y\": 4, \"w\": 5, \"x\": 0}, \"embeddableConfig\": {\"vis\": {\"legendOpen\": false, \"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}, \"panelIndex\": \"5\", \"version\": \"6.2.4\", \"type\": \"visualization\", \"id\": \"240f3630-eb05-11e7-8f04-51231daa5b05\"}, {\"gridData\": {\"i\": \"6\", \"h\": 1, \"y\": 0, \"w\": 12, \"x\": 0}, \"type\": \"visualization\", \"version\": \"6.1.0-SNAPSHOT\", \"panelIndex\": \"6\", \"id\": \"2d6e0760-f4ab-11e7-8647-534bb4c21040\"}]",
+      "timeRestore": false,
+      "title": "[Osquery Result] Compliance pack",
+      "uiStateJSON": "{\"P-5\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c0a7ce90-f4aa-11e7-8647-534bb4c21040",
+    "_type": "dashboard",
+    "_source": {
+      "description": "This dashboard shows data collected by the OSSEC rootkit pack from osquery",
+      "hits": 0,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+      },
+      "optionsJSON": "{\"useMargins\": true, \"darkTheme\": false, \"hidePanelTitles\": false}",
+      "panelsJSON": "[{\"gridData\": {\"i\": \"1\", \"h\": 2, \"y\": 1, \"w\": 4, \"x\": 8}, \"type\": \"visualization\", \"version\": \"6.1.0-SNAPSHOT\", \"panelIndex\": \"1\", \"id\": \"6ec10290-f4aa-11e7-8647-534bb4c21040\"}, {\"gridData\": {\"i\": \"2\", \"h\": 2, \"y\": 1, \"w\": 4, \"x\": 4}, \"type\": \"visualization\", \"version\": \"6.1.0-SNAPSHOT\", \"panelIndex\": \"2\", \"id\": \"ffdbba50-f4a9-11e7-8647-534bb4c21040\"}, {\"gridData\": {\"i\": \"3\", \"h\": 2, \"y\": 1, \"w\": 4, \"x\": 0}, \"type\": \"visualization\", \"version\": \"6.1.0-SNAPSHOT\", \"panelIndex\": \"3\", \"id\": \"ab587180-f4a9-11e7-8647-534bb4c21040\"}, {\"gridData\": {\"i\": \"4\", \"h\": 1, \"y\": 0, \"w\": 12, \"x\": 0}, \"type\": \"visualization\", \"version\": \"6.1.0-SNAPSHOT\", \"panelIndex\": \"4\", \"id\": \"2d6e0760-f4ab-11e7-8647-534bb4c21040\"}, {\"gridData\": {\"i\": \"5\", \"h\": 4, \"y\": 3, \"w\": 12, \"x\": 0}, \"type\": \"search\", \"version\": \"6.1.0-SNAPSHOT\", \"panelIndex\": \"5\", \"id\": \"0fe5dc00-f49b-11e7-8647-534bb4c21040\"}]",
+      "timeRestore": false,
+      "title": "[Osquery Result] OSSEC rootkit pack",
+      "uiStateJSON": "{}",
+      "version": 1
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  }
+]
