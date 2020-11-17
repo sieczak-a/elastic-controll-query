@@ -17,7 +17,7 @@ output {
   elasticsearch {
     hosts => "localhost:9200"
     index => "sniff_query-%{+YYYY.MM.dd}"
-    template => "/home/elk/elk/logstash-6.7.2/templates/filebeat_template.json"
+    template => "/etc/logstash-6.7.2/templates/filebeat_template.json"
     template_name => "filebeat_template"
     template_overwrite => true
   }
