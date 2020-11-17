@@ -13,8 +13,8 @@ filebeat.inputs:
 
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
-    - /etc/elasticsearch/logs/p4elk-prod_index_search_slowlog.log
-    - /etc/elasticsearch/logs/p4elk-prod_index_indexing_slowlog.log    
+    - /etc/elasticsearch/logs/elastic_index_search_slowlog.log
+    - /etc/elasticsearch/logs/elastic_index_indexing_slowlog.log    
 
 #----------------------------- Logstash output --------------------------------
 output.logstash:
